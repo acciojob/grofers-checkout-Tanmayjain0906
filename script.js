@@ -15,6 +15,7 @@ const getSum = () => {
 		}
 
 	let tr = document.createElement("tr");
+	tr.id = "ans";
 	let td1 = document.createElement("td");
 	td1.innerText = "Total Price";
 
