@@ -3,7 +3,7 @@ getSumBtn.append("Get Total Price");
 document.body.appendChild(getSumBtn);
 
 const table = document.getElementsByTagName("table")[0];
-const price = document.getElementsByClassName("price");
+const price = document.querySelectorAll(".price");
 
 const getSum = () => {
  let totalAmount = 0;
@@ -16,7 +16,7 @@ const getSum = () => {
 
 	let tr = document.createElement("tr");
 	let td1 = document.createElement("td");
-	td1.innerText = "Total";
+	td1.innerText = "Total Price";
 
 	let td2 = document.createElement("td");
      td2.innerText = totalAmount;
